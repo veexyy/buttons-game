@@ -1,0 +1,28 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(243, 202, 188);
+}
+button{
+    cursor: pointer;
+    border-radius: 53px;
+    background: #f3c9f0;
+    box-shadow:  7px 7px 15px #f0e7ca,
+                -7px -7px 15px #ffffff;
+    background-color: antiquewhite;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 40px;
+    border: none;
+}
+
+button:hover{
+    transform: scale(110%);
+    animation-duration: 0.5s;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 22.5%;
+}
+
