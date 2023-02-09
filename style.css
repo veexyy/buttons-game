@@ -1,17 +1,17 @@
 body{
     font-family: 'Roboto Mono', monospace;
     background-color: #372e4b;
+    overflow: hidden;
 }
 button{
     cursor: pointer;
     border-radius: 53px;
     background: #f3c9f0;
-    box-shadow:  2px 2px 15px #457dbd,
-                -2px -2px 15px #457dbd;
-    background-color: #efc988;
+    box-shadow:  3px 3px 15px #457dbd, -3px -3px 15px #457dbd;
+    background-color: #FFB840;
     padding: 15px 32px;
     text-align: center;
-    font-size: 32px;
+    font-size: 24px;
     border-radius: 40px;
     border: none;
 }
@@ -19,11 +19,31 @@ button{
 button:hover{
     transform: scale(110%);
     transition-duration: 0.5s;
-
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16.5%;
+}
+.text{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.text.result:hover{
+    transform: scale(110%);
+    transition-duration: 0.5s;
+}
+
+.text.result{
+    cursor: pointer;
+}
+
 .buttons{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 22.5%;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
