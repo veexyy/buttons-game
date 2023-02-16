@@ -3,7 +3,8 @@ const firstButton = document.querySelector('.first')
 const secondButton = document.querySelector('.second')
 const thirdButton = document.querySelector('.third')
 
-
+// получение результата
+const result = document.querySelector('.result')
 // массив с кнопками
 const arrButtons = [
     firstButton, 
@@ -15,6 +16,15 @@ const arrButtons = [
 const randomize = Math.floor(Math.random()*arrButtons.length);
 
 
+// result.onclick = function() {
+//     firstButton.style.background = '#FFB840';
+//     secondButton.style.background = '#FFB840';
+//     thirdButton.style.background = '#FFB840';
+//     firstButton.disabled = false;
+//     secondButton.disabled = false;
+//     thirdButton.disabled = false;
+//     this.hidden = true;
+// }
 
 // функция, которая красит кнопки в зависимости от результата игрока
 function paint() {
@@ -28,6 +38,7 @@ function paint() {
             secondButton.disabled = true;
             thirdButton.disabled = true;
             document.querySelector('.text.result').innerHTML = 'You win!';
+            result.hidden = false;
         } 
     }
     else{
@@ -41,6 +52,7 @@ function paint() {
             secondButton.disabled = true;
             thirdButton.disabled = true;
             document.querySelector('.text.result').innerHTML = 'Try again';
+            result.hidden = false;
         }  
     }
     // если выпало 1 или вторая кнопка
@@ -53,6 +65,7 @@ function paint() {
             firstButton.disabled = true;
             thirdButton.disabled = true;
             document.querySelector('.text.result').innerHTML = 'You win!';
+            result.hidden = false;
         }  
     }
     else{
@@ -66,6 +79,7 @@ function paint() {
             firstButton.disabled = true;
             thirdButton.disabled = true;
             document.querySelector('.text.result').innerHTML = 'Try again';
+            result.hidden = false;
         }  
     }
 
@@ -79,6 +93,7 @@ function paint() {
             firstButton.disabled = true;
             secondButton.disabled = true;
             document.querySelector('.text.result').innerHTML = 'You win!';
+            result.hidden = false;
         } 
     
     }
@@ -93,6 +108,7 @@ function paint() {
             secondButton.disabled = true;
             firstButton.disabled = true;
             document.querySelector('.text.result').innerHTML = 'Try again';
+            result.hidden = false;
         }  
     }
 }
